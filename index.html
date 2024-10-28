@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ormiston Primary Behaviour Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="popup">
+        <div id="popup-content">
+            <h1>Ormiston Primary Behaviour Support</h1>
+            <button onclick="closePopup()">Continue</button>
+        </div>
+    </div>
+    
+    <div id="main-content" style="display:none;">
+        <header>
+            <h1>SELECT A BEHAVIOUR</h1>
+            <img src="logo.png" alt="School Logo">
+        </header>
+<!-- Anxiety Section -->
+<div class="behavior-section">
+    <h2>Anxiety</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('anxiety-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('anxiety-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('anxiety-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('anxiety-resources')">Resources</button>
+    </div>
+
+    <div class="tab-content" id="anxiety-what">
+        <ul>
+            <li>Worry about everyday things and are unable to control them.</li>
+            <li>Frequently ask for help with tasks they can do independently.</li>
+            <li>Apprehensive to start and work independently, needing constant reassurance once they begin.</li>
+            <li>Seem unsure of themselves with low self-confidence and self-esteem.</li>
+            <li>Do not smile often, appear unable to relax, are easily startled, and have difficulty concentrating.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="anxiety-tier1" style="display:none;">
+        <ul>
+            <li>Assure the learner that everyone experiences stress, frustration, worry, or feeling overwhelmed.</li>
+            <li>Validate their experiences with statements like: “I know you are frustrated because you feel this assignment is too hard.”</li>
+            <li>Normalize the feeling: “I also get frustrated when I think something is hard, and so do other learners.”</li>
+            <li>Teach practical relaxation techniques: deep breathing, counting to 10, or journaling.</li>
+            <li>Scaffold tasks by breaking them into smaller parts and allowing breaks after each part is completed.</li>
+            <li>Teach coping skills: recognize physical signs (sweaty, racing heart), label the emotion, and use strategies to regulate.</li>
+            <li>Provide proximal seating and check on them often.</li>
+            <li>Use reflective listening: repeat back what the learner says to show understanding.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="anxiety-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss concerns with the Senior Leadership Team (SLT).</li>
+            <li>Meet with parents to discuss concerns and strategies.</li>
+            <li>Encourage parents to seek a GP appointment if they have concerns about anxiety.</li>
+            <li>Consider external referrals to health or social services.</li>
+            <li>Provide counseling support, either private or through GP sessions.</li>
+            <li>Offer one-on-one mentoring.</li>
+            <li>Implement check-in/check-out procedures, where learners check in daily with an adult for encouragement.</li>
+            <li>Use non-verbal cues and signals to communicate when feeling overwhelmed.</li>
+            <li>Provide sensory tools and toys to assist in managing anxiety.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="anxiety-resources" style="display:none;">
+        <ul>
+            <li><a href="anxiety.pdf" target="_blank">Download Anxiety PDF</a></li>
+            <li><a href="https://teachwithgive.org/resource/classroom-management-non-verbal-cues/" target="_blank">Using Non-Verbal Cues</a></li>
+            <li><a href="https://www.indeed.com/career-advice/career-development/reflective-listening" target="_blank">Reflective Listening</a></li>
+            <li><a href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/relaxation-technique/art-20045368" target="_blank">Relaxation Techniques</a></li>
+            <li><a href="https://www.panoramaed.com/blog/check-in-check-out-cico-intervention" target="_blank">Check-in, Check-out</a></li>
+            <li><a href="https://www.theladders.com/career-advice/5-non-verbal-communication-cues-that-show-if-someone-is-anxious#:~:text=Commonly%2C%20those%20with%20anxiety%20will,causes%20them%20to%20be%20anxious." target="_blank">Non-verbal Cues and Signals</a></li>
+            <li><a href="https://www.masterclass.com/articles/reflective-thinking" target="_blank">Reflective Thinking</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+
+
+
+ <!-- Defiance Section -->
+<div class="behavior-section">
+    <h2>Defiance</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('defiance-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('defiance-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('defiance-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('defiance-resources')">Resources</button>
+    </div>
+
+    <div class="tab-content" id="defiance-what">
+        <ul>
+            <li>Lash out verbally at others and engage in arguments and conflict.</li>
+            <li>Unwilling to let issues go or drop them.</li>
+            <li>Dislike being told what to do and often do the opposite of what is instructed.</li>
+            <li>Exhibit physical signs of defiance, such as crossing arms or stomping feet, when asked to follow directives.</li>
+            <li>Become aggressive and act out when asked to do something.</li>
+            <li>Refuse to comply with adult requests and follow classroom routines.</li>
+            <li>Only engage in tasks or activities they like, displaying tantrums or meltdowns when asked to do something else.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="defiance-tier1" style="display:none;">
+        <ul>
+            <li>Acknowledge positive behavior to encourage compliance.</li>
+            <li>Avoid power struggles by remaining calm and stating expectations clearly.</li>
+            <li>Provide clear and concise directions using a neutral tone.</li>
+            <li>Offer acceptable choices and allow the learner to decide within 10 seconds or you choose for them.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="defiance-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss concerns with the Senior Leadership Team (SLT) or redirect the learner to SLT.</li>
+            <li>Engage with parents through hui (meetings).</li>
+            <li>Implement time out of the classroom by redirecting to the office.</li>
+            <li>Offer time out during iBreak as a cooling-off period.</li>
+            <li>Set goals, monitor progress, and use a daily tracking sheet.</li>
+            <li>Establish a behavior contract with clear expectations.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="defiance-resources" style="display:none;">
+        <ul>
+            <li><a href="https://www.edutopia.org/article/6-ways-help-students-odd/" target="_blank">Ways to Help Students with Oppositional Defiance Behaviors</a></li>
+            <li><a href="https://insightstobehavior.com/blog/7-effective-communication-techniques-manage-defiant-students/" target="_blank">Managing Defiant Students</a></li>
+            <li><a href="https://www.responsiveclassroom.org/when-children-are-defiant/" target="_blank">Responsive Classroom - When Children are Defiant</a></li>
+            <li><a href="https://www.lausd.org/cms/lib/CA01000043/Centricity/Domain/1106/Behavior%20Contract.pdf" target="_blank">Behavior Contract</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+
+    function openPDF(pdfName) {
+        window.open(pdfName, '_blank');
+    }
+</script>
+
+<!-- Aggression/Bullying Section -->
+<div class="behavior-section">
+    <h2>Aggression/Bullying</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('aggression-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('aggression-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('aggression-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('aggression-resources')">Resources</button>
+    </div>
+
+    <div class="tab-content" id="aggression-what">
+        <ul>
+            <li>Verbally or physically harass others.</li>
+            <li>Engage in bullying activities, intimidation, and threats.</li>
+            <li>Be observed hitting, kicking, or repeatedly pushing others.</li>
+            <li>Demonstrate intense anger.</li>
+            <li>Frequently lose temper or have explosive outbursts.</li>
+            <li>Hurt or interact roughly with others during play, recess, or free time.</li>
+            <li>Name-calling and derogatory remarks.</li>
+            <li>Instigate and engage in frequent conflicts, arguments, and fights.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="aggression-tier1" style="display:none;">
+        <ul>
+            <li>Don't overreact; maintain control of the situation.</li>
+            <li>Redirect behavior by reinforcing established rules and expectations.</li>
+            <li>Minimize verbal instructions; utilize non-verbal signals and choices to redirect behavior.</li>
+            <li>Use the Zones of Regulation toolkit for strategies.</li>
+            <li>Clearly define and consistently enforce rules regarding respectful behavior, bullying, and aggression, making sure the learner understands the consequences.</li>
+            <li>Intervene early to prevent escalation and convey that such actions are unacceptable.</li>
+            <li>Utilize restorative practices such as group discussions and reflection on actions.</li>
+            <li>Encourage open communication; create a safe environment for students to express their feelings and concerns.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="aggression-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss with Senior Leadership Team (SLT) or redirect the learner to SLT.</li>
+            <li>Engage parents through hui (meetings).</li>
+            <li>Implement time out of the classroom environment.</li>
+            <li>Use time out during iBreaks.</li>
+            <li>Gradually reintroduce the learner back into the classroom or playground.</li>
+            <li>Conduct restorative conversations to address behavior.</li>
+            <li>Maintain daily behavior tracking to monitor progress.</li>
+            <li>Create a Behavior Intervention Plan with support from SLT.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="aggression-resources" style="display:none;">
+        <ul>
+            <li><a href="https://docs.google.com/presentation/d/1Defy6mjYinSEAktah9e957Xd9EgEkG8h/edit#slide=id.p1" target="_blank">Gentle Hands No Hitting</a></li>
+            <li><a href="https://docs.google.com/document/d/1Vmq2OMyBOvOF5VrBWoy4hdUHlQefxvKu/edit" target="_blank">Social Stories About Aggression</a></li>
+            <li><a href="https://drive.google.com/file/d/1WE9BHXm1-Stlxrh6kiW6qOJBWYeILOpM/view?usp=sharing" target="_blank">Social Story - Hitting</a></li>
+            <li><a href="https://drive.google.com/file/d/1e08PsDkLUfZE0w9CwsQXWT76Jnto6NXq/view?usp=sharing" target="_blank">Social Story Series - Aggressive Behaviors</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1ZqFh2L5sL6TXyRAYjDOmXBR30SbTph7a/edit?usp=sharing&ouid=111209814759622241655&rtpof=true&sd=true" target="_blank">Social Story - Addressing Hitting</a></li>
+            <li><a href="https://scsdbehaviormatters.weebly.com/daily-behavior-tracking-sheet.html" target="_blank">Daily Behavior Tracking Sheet</a></li>
+            <li><a href="https://kidsmentalhealthpiercecounty.org/wp-content/uploads/2020/06/1-How-Big-is-My-Problem-Poster-and-Worksheet-Letter-A4-1.pdf" target="_blank">How Big is My Problem?</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+
+    function openPDF(pdfName) {
+        window.open(pdfName, '_blank');
+    }
+</script>
+
+   <!-- Disrespectful/Confrontational Section -->
+<div class="behavior-section">
+    <h2>Disrespectful/Confrontational</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('disrespectful-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('disrespectful-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('disrespectful-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('disrespectful-resources')">Resources</button>
+    </div>
+
+    <div class="tab-content" id="disrespectful-what">
+        <ul>
+            <li>Frequent confrontation with adults and peers.</li>
+            <li>Regularly talking back to adults.</li>
+            <li>Destruction of others’ property.</li>
+            <li>Taking and using others’ belongings without permission.</li>
+            <li>Dismissive behavior toward others.</li>
+            <li>Unwillingness to consider others’ ideas and opinions.</li>
+            <li>Disregard for others’ feelings, well-being, and safety.</li>
+            <li>Verbal lashing out at others.</li>
+            <li>Challenging the authority of adults.</li>
+            <li>Refusal to comply with adult requests.</li>
+            <li>Ignoring habitat routines.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="disrespectful-tier1" style="display:none;">
+        <ul>
+            <li>Acknowledge positive behavior. Recognize when the learner behaves appropriately, pays attention, stays on task, is prepared for work, sits quietly, or shows kindness.</li>
+            <li>Avoid power struggles; remain calm.</li>
+            <li>Redirect behavior by asking the learner to find a space to calm down and take a break.</li>
+            <li>Explain assignments/directions using eye contact; have the learner repeat directions back to you.</li>
+            <li>Implement consequences that match the severity of the behavior, such as missing iBreak or withdrawing privileges.</li>
+            <li>Walk away from the situation; do not engage in a conversation about it.</li>
+            <li>Encourage the learner to reflect on their behavior using the Reflection sheet.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="disrespectful-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss the situation with the Senior Leadership Team (SLT) or redirect the learner to SLT.</li>
+            <li>Conduct hui (meetings) with parents.</li>
+            <li>Implement time out of the classroom; redirect the learner to the office.</li>
+            <li>Conduct restorative conversations to address behavior.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="disrespectful-resources" style="display:none;">
+        <ul>
+            <li><a href="https://www.teacherspayteachers.com/browse/free?search=check%20in%20check%20out%20behavior%20sheet" target="_blank">Check-in, Check-out</a></li>
+            <li><a href="https://www.twinkl.co.za/resource/student-self-reflection-sheet-us-cm-1664389429" target="_blank">Self Reflection Sheet</a></li>
+            <li><a href="https://scsdbehaviormatters.weebly.com/daily-behavior-tracking-sheet.html" target="_blank">Daily Behavior Tracking Sheet</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+
+    function openPDF(pdfName) {
+        window.open(pdfName, '_blank');
+    }
+</script>
+
+
+    <!-- Off-task/Disruptive Section -->
+<div class="behavior-section">
+    <h2>Off-task/Disruptive</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('offtask-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('offtask-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('offtask-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('offtask-resources')">Resources</button>
+    </div>
+
+    <div class="tab-content" id="offtask-what">
+        <ul>
+            <li>Annoying and distracting to others.</li>
+            <li>Pestering peers.</li>
+            <li>Asking many obvious questions.</li>
+            <li>Making frequent and unnecessary comments.</li>
+            <li>Engaging in tasks other than assigned work.</li>
+            <li>Talking to others frequently.</li>
+            <li>Throwing objects.</li>
+            <li>Yelling out in class.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="offtask-tier1" style="display:none;">
+        <ul>
+            <li>Avoid power struggles; remain calm, cool, and collected.</li>
+            <li>Clearly explain assignments and directions.</li>
+            <li>Simplify tasks as needed.</li>
+            <li>Use eye contact and engage at the learner's level when explaining assignments.</li>
+            <li>Have the learner repeat and explain each part of the directions back to you.</li>
+            <li>Encourage moving to a new location or teaming up with a buddy.</li>
+            <li>Praise the learner when they are on task. Make praises specific and individualized (e.g., “I like how you brought your folder/work and are ready for learning today.”).</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="offtask-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss the situation with the Senior Leadership Team (SLT) or redirect the learner to SLT.</li>
+            <li>Conduct hui (meetings) with parents.</li>
+            <li>Implement restorative conversations to address behavior.</li>
+            <li>Provide time out of habitat to complete the task.</li>
+            <li>Allow time out of iBreak to complete the task.</li>
+        </ul>
+    </div>
+
+    <div class="tab-content" id="offtask-resources" style="display:none;">
+        <ul>
+            <li><a href="https://www.twinkl.co.za/resource/student-self-reflection-sheet-us-cm-1664389429" target="_blank">Self Reflection Sheet</a></li>
+            <li><a href="https://scsdbehaviormatters.weebly.com/daily-behavior-tracking-sheet.html" target="_blank">Daily Behavior Tracking Sheet</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+ <!-- Upset/Crying Section -->
+<div class="behavior-section">
+    <h2>Upset/Crying</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('upset-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('upset-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('upset-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('upset-resources')">Resources</button>
+    </div>
+    <div class="tab-content" id="upset-what">
+        <ul>
+            <li>Have frequent emotional meltdowns.</li>
+            <li>Cry frequently over “small” things like lost place in line or wrong answer.</li>
+            <li>Appear distraught, disturbed, or sad.</li>
+            <li>Have trouble pulling themselves together and calming down.</li>
+            <li>Refuse to be comforted, push others away.</li>
+            <li>Be unable to talk or verbally express concerns.</li>
+            <li>Rock, hold head or face in hands, turn away or back to others, put hand up, shake head “no.”</li>
+            <li>Not knowing what they want when asked.</li>
+            <li>Ask to be left alone, run away, or sit in a corner in the habitat.</li>
+            <li>Put hand to mouth and flutter hands and/or arms.</li>
+            <li>Make statements like “I can’t do this,” “This isn’t happening,” “I can’t take this,” etc.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="upset-tier1" style="display:none;">
+        <ul>
+            <li>Provide reassurance and encourage deep breathing.</li>
+            <li>Speak in a calm, neutral voice. Avoid matching the emotional state of the student.</li>
+            <li>Redirect to strategies from the Zones of Regulation toolkit.</li>
+            <li>Move to a breakout room or another space in the habitat.</li>
+            <li>Instill confidence: “I know you can do it and I think you know you can too.”</li>
+            <li>Allow time for the student to calm down. Offer choices when they are ready.</li>
+            <li>Teach coping skills at a separate time to prepare for future difficult situations.</li>
+            <li>Use reflective listening: repeat back what the learner says to show understanding.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="upset-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Discuss with SLT (Senior Leadership Team) or redirect the learner to SLT.</li>
+            <li>Hui (meeting) with parents to understand triggers.</li>
+            <li>Time out of the habitat if needed.</li>
+            <li>Perform a well-being check regularly for emotional stability.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="upset-resources" style="display:none;">
+        <ul>
+            <li><a href="https://zonesofregulation.com/" target="_blank">Zones of Regulation</a></li>
+            <li><a href="https://www.calm.com/blog/breathing-exercises-for-anxiety" target="_blank">Breathing Exercises</a></li>
+            <li><a href="https://www.self.com/gallery/relaxing-exercises" target="_blank">Relaxation Stretching</a></li>
+            <li><a href="https://www.masterclass.com/articles/reflective-thinking" target="_blank">Reflective Thinking</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+<!-- Not Ready to Learn Section -->
+<div class="behavior-section">
+    <h2>Not Ready to Learn</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('notready-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('notready-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('notready-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('notready-resources')">Resources</button>
+    </div>
+    <div class="tab-content" id="notready-what">
+        <ul>
+            <li>Appears confused and distracted.</li>
+            <li>Lacks focus on the task.</li>
+            <li>Shows a lack of engagement with the task.</li>
+            <li>Quietly blends in while doing nothing, doodling, or pretending to work.</li>
+            <li>Spends excessive time searching through things (desk, locker, etc.).</li>
+            <li>Claims to be working on something but produces few results.</li>
+            <li>Does not have necessary tools for the lesson (e.g., books, writing tools).</li>
+            <li>Lacks confidence or has difficulty with comprehension and memory skills.</li>
+            <li>Struggles to follow verbal instructions.</li>
+            <li>Has difficulty following complex instructions.</li>
+            <li>Has poor organizational skills.</li>
+            <li>Makes frequent excuses to avoid tasks.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="notready-tier1" style="display:none;">
+        <ul>
+            <li>Assign a buddy to assist with transitions, setup, and organization.</li>
+            <li>Break down assignments and simplify instructions. Allow the student to start with easy or hard items, based on their preference.</li>
+            <li>Provide opportunities for the learner to check back after completing small sections of the task.</li>
+            <li>Offer 1:1 support at the start, making eye contact and ensuring attention.</li>
+            <li>Redirect to strategies from the Zones of Regulation toolkit to help prepare the learner for engagement.</li>
+            <li>Use a visual planner or schedule for activities and tasks, including group assignments and required materials.</li>
+            <li>Clearly explain the assignment and directions, making eye contact. Have the learner repeat directions back to you.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="notready-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Collaborate with SLT or redirect the learner to SLT.</li>
+            <li>Hui (meeting) with parents to discuss potential barriers and support.</li>
+            <li>Offer time out of the habitat to complete the task.</li>
+            <li>Allow time out of iBreak to complete unfinished tasks.</li>
+            <li>Set goals, monitor progress, and track achievement.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="notready-resources" style="display:none;">
+        <ul>
+            <li><a href="https://zonesofregulation.com/" target="_blank">Zones of Regulation</a></li>
+            <li><a href="https://www.indeed.com/career-advice/career-development/nonverbal-communication-skills" target="_blank">Non-verbal Cues and Signals</a></li>
+            <li><a href="https://www.understood.org/en/articles/how-to-teach-your-grade-schooler-organization-skills" target="_blank">Teach Organizational Skills</a></li>
+            <li><a href="https://www.teacherspayteachers.com/browse/free?search=visual%20schedule" target="_blank">Visual Schedules (TPT)</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+
+    <!-- Lack of Social Skills Section -->
+<div class="behavior-section">
+    <h2>Lack of Social Skills</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('socialskills-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('socialskills-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('socialskills-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('socialskills-resources')">Resources</button>
+    </div>
+    <div class="tab-content" id="socialskills-what">
+        <ul>
+            <li>Interacts and navigates their environment in an awkward or odd manner.</li>
+            <li>Antagonizes others by annoying, poking, hitting, or seeking attention and then running away.</li>
+            <li>Has poor understanding of appropriate times and places to say certain things.</li>
+            <li>Frequently teases others.</li>
+            <li>Has younger or more immature friends.</li>
+            <li>Displays emotional immaturity.</li>
+            <li>Struggles with making or maintaining friendships.</li>
+            <li>Displays inappropriate behaviors.</li>
+            <li>Always tries to top others, win, or be better than everyone else.</li>
+            <li>Is a poor winner or loser.</li>
+            <li>Plays alone or engages in parallel play.</li>
+            <li>Acts silly to make others laugh.</li>
+            <li>Is overprotective of relationships.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="socialskills-tier1" style="display:none;">
+        <ul>
+            <li>Assign a buddy to model appropriate social interactions.</li>
+            <li>Provide specific opportunities for social interaction and teach social skills.</li>
+            <li>Teach appropriate ways to interact with others.</li>
+            <li>Move the learner to a new location to manage behavior.</li>
+            <li>Focus attention on the learner without highlighting their behavior negatively.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="socialskills-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care.</li>
+            <li>Collaborate with SLT or redirect the learner to SLT for support.</li>
+            <li>Conduct a hui (meeting) with parents to address concerns.</li>
+            <li>Involve RTLB (Resource Teacher Learning and Behavior) for targeted interventions.</li>
+            <li>Implement a social skills intervention program.</li>
+            <li>Set goals, monitor progress, and track the learner's achievements.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="socialskills-resources" style="display:none;">
+        <ul>
+            <li><a href="https://everydayspeech.com/sel-implementation/the-effects-of-lacking-social-skills-insights-and-solutions/#:~:text=The%20absence%20of%20social%20skills,or%20misunderstood%20in%20social%20interactions." target="_blank">The Effects of Lacking Social Skills: Insights and Solutions</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+<!-- Tantrums/Out of Control Section -->
+<div class="behavior-section">
+    <h2>Tantrums/Out of Control</h2>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('tantrums-what')">What it is?</button>
+        <button class="tab-button" onclick="showTab('tantrums-tier1')">Tier one intervention</button>
+        <button class="tab-button" onclick="showTab('tantrums-tier2')">Tier two intervention</button>
+        <button class="tab-button" onclick="showTab('tantrums-resources')">Resources</button>
+    </div>
+    <div class="tab-content" id="tantrums-what">
+        <ul>
+            <li>Fails to respond to redirection, calming, or de-escalation efforts.</li>
+            <li>Displays extreme oppositional and defiant behavior.</li>
+            <li>Deliberately destroys items, furniture, toys, or supplies.</li>
+            <li>Engages in physical outbursts like yelling, hitting, kicking, biting, flailing, or rolling on the ground.</li>
+            <li>Lays on the floor and refuses to follow instructions.</li>
+            <li>Runs around the room or out of school.</li>
+            <li>Shows no concern for consequences or adult authority.</li>
+            <li>Shouts defiant phrases like “No”, “I don’t want to”, or “Make me.”</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="tantrums-tier1" style="display:none;">
+        <ul>
+            <li>Avoid power struggles by keeping responses brief and to the point.</li>
+            <li>Use a calm, neutral tone without matching the student’s emotional level.</li>
+            <li>State the expectation and consequence, give the student a choice, and walk away.</li>
+            <li>If the student is too distressed, maintain distance and avoid eye contact.</li>
+            <li>Offer choices and allow time for the student to make a decision, then step away.</li>
+            <li>Use redirection if the learner is able to be de-escalated.</li>
+            <li>Remove the student from the situation and discuss the issue after they have calmed down.</li>
+            <li>Use reflective listening (e.g., “I hear you’re feeling upset”).</li>
+            <li>Count to 10 and redirect the learner to Zones of Regulation if receptive.</li>
+            <li>Move to a quieter corner or a breakout room for calming down.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="tantrums-tier2" style="display:none;">
+        <ul>
+            <li>Seek advice from pastoral care or school counselors.</li>
+            <li>Consult with SLT or redirect the learner to SLT for additional support.</li>
+            <li>Hui (meet) with parents to discuss concerns and strategies.</li>
+            <li>Refer to RTLB if behavior persists after Tier 1 strategies have been implemented.</li>
+            <li>Conduct a well-being check to rule out other triggers for emotional outbursts.</li>
+            <li>Create a behavior de-escalation plan in consultation with SLT.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="tantrums-resources" style="display:none;">
+        <ul>
+            <li><a href="https://www.webmd.com/balance/stress-management/stress-relief-breathing-techniques" target="_blank">Deep Breathing Exercises</a></li>
+            <li><a href="https://zonesofregulation.com/" target="_blank">Zones of Regulation</a></li>
+            <li><a href="https://www.thewatsoninstitute.org/watson-life-resources/situation/classroom-coping-skills/" target="_blank">Teach Coping Skills</a></li>
+            <li><a href="https://www.twinkl.co.za/resource/student-self-reflection-sheet-us-cm-1664389429" target="_blank">Reflection Sheet</a></li>
+            <li><a href="https://scsdbehaviormatters.weebly.com/daily-behavior-tracking-sheet.html" target="_blank">Daily Behavior Tracking Sheet</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        document.getElementById(tabId).style.display = 'block';
+    }
+</script>
+
+
+    <script>
+        // Show the main content after a delay
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+
+        // Function to show the tab content
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Function to open a PDF in a new tab
+        function openPDF(pdfUrl) {
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
